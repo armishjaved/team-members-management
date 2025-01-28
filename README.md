@@ -46,10 +46,11 @@ team-members-management/
 
 ## 🔧 Installation Guide
 
-1. Clone the Git Repository:
+1. In order to run this app, you need to have node.js, python, and package manager like npm installed.
+2. Clone the Git Repository:
    ```git clone https://github.com/armishjaved/team-members-management.git```
-2. cd team-members-management
-3. install requirements using:
+3. cd team-members-management
+4. install requirements using:
    ``` pip install -r requirements.txt ```
 
 To run the app:
