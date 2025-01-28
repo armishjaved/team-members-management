@@ -3,7 +3,7 @@ import axios from "axios";
 import "../styles.css";
 
 
-const ListMembers = ({ setCurrentPage, setuserModifyId }) => {
+const ListMembers = ({ setCurrentPage, setuserModifyId, goToLandingPage }) => {
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
@@ -18,6 +18,7 @@ const ListMembers = ({ setCurrentPage, setuserModifyId }) => {
   {/* Sticky Header */}
   <div className="header">
   <div className="header-content">
+  <button onClick={goToLandingPage} className="backButton">←</button>  
     <h2 className="title">Team Members</h2>
     <button onClick={() => { setCurrentPage(2); }} className="addButton">+</button>
   </div>
