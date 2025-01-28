@@ -53,7 +53,6 @@ team-members-management/
 1. Clone the Git Repository: git clone https://github.com/armishjaved/team-members-management.git
 2. cd team-members-management
 3. install requirements using $ pip install -r requirements.txt
-4. Install client-side dependencies
 
 To run the app:
 
