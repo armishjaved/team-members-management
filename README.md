@@ -32,9 +32,10 @@ A **Full-Stack** web application built with **Django REST Framework** for the ba
 ---
 
 ## 🏗️ Project Structure
+```bash
 team-members-management/ │── teamMemberManagementApp/ # Django Backend (API) │── teamMemberManagementApp_api/ # Django API Implementation │── teammembers/ # React Frontend (SPA) │── manage.py # Django Manager │── db.sqlite3 # Database │── requirements.txt # Python dependencies │── README.md # Documentation │── package.json # React dependencies │── .gitignore
 
-
+```
 
 ---
 
@@ -42,14 +43,13 @@ team-members-management/ │── teamMemberManagementApp/ # Django Backend (AP
 
 1. Clone the Git Repository: https://github.com/daniel-liemng/employyee_react_django.git
 2. cd team-members-management
-3. Install server-side and client-side dependencies
+3. install requirements using $ pip install -r requirements.txt
+4. Install client-side dependencies
 
 Environment variables
 Server-side
 
 
-pip install django
-pip install djangorestframework
 python manage.py runserver
 The API should now be running at:
 ➡️ http://127.0.0.1:8000/api/
