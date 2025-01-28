@@ -55,19 +55,18 @@ team-members-management/
 3. install requirements using $ pip install -r requirements.txt
 4. Install client-side dependencies
 
-Environment variables
+To run the app:
+
 Server-side
-
-
-- python manage.py runserver
-The API should now be running at:
+1. python manage.py runserver
+- The API should now be running at:
 ➡️ http://127.0.0.1:8000/api/
 
 Client-side
 
-- cd teammembers
-- npm install
-- npm run dev
+1. cd teammembers
+2. npm install
+3. npm run dev
 - The frontend should now be running at:
 ➡️ http://localhost:3000/
 
