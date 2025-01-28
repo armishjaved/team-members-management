@@ -6,7 +6,7 @@ A **Full-Stack** web application built with **Django REST Framework** for the ba
 
 ## 🚀 Features
 
-✅ View all team members with roles(if admin).  
+✅ View all team members and admin.  
 ✅ Add new team members with role selection.  
 ✅ Edit existing team member details.  
 ✅ Delete team members (Only Admins can delete).
@@ -46,9 +46,12 @@ team-members-management/
 
 ## 🔧 Installation Guide
 
-1. Clone the Git Repository: git clone https://github.com/armishjaved/team-members-management.git
-2. cd team-members-management
-3. install requirements using $ pip install -r requirements.txt
+1. In order to run this app, you need to have node.js, python, and package manager like npm installed.
+2. Clone the Git Repository:
+   ```git clone https://github.com/armishjaved/team-members-management.git```
+3. cd team-members-management
+4. install requirements using:
+   ``` pip install -r requirements.txt ```
 
 To run the app:
 
