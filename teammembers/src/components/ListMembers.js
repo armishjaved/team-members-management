@@ -24,6 +24,7 @@ const ListMembers = ({ setCurrentPage, setuserModifyId, goToLandingPage }) => {
   </div>
   {teamMembers.length > 0 && (
     <div className="memberCount">
+      {/* assuming admin is always there before regular members */}
       You have {teamMembers.length -1} Team Member{teamMembers.length !== 1 ? "s" : ""}
     </div>
   )}
