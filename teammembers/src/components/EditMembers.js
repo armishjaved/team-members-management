@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles.css";
 
-const EditMembers = (props) => {
-    const id = props.userModifyId;
+const EditMembers = ({ setCurrentPage, userModifyId, userRole }) => {
+    const id = userModifyId;
     const [formData, setFormData] = useState({
         first_name: "",
         last_name: "",
@@ -30,7 +30,7 @@ const EditMembers = (props) => {
         e.preventDefault();
         axios
             .put(`http://127.0.0.1:8000/api/team-members/${id}/`, formData)
-            .then(() => { props.setCurrentPage(1); })
+            .then(() => { setCurrentPage(1); })
             .catch((error) => {
                 if (error.response && error.response.data.email) {
                     setError(error.response.data.email[0]); //email error
@@ -41,12 +41,15 @@ const EditMembers = (props) => {
     };
 
     const handleDelete = () => {
-        axios
-            .delete(`http://127.0.0.1:8000/api/team-members/${id}/`)
-            .then(() => { props.setCurrentPage(1); })
+        if (userRole !== "admin") {
+            setError("Only admins can delete team members.");
+            return;
+        }
+        axios.delete(`http://127.0.0.1:8000/api/team-members/${id}/`)
+            .then(() => { setCurrentPage(1); })
             .catch((error) => {
                 if (error.response && error.response.status === 403) {
-                    setError("Only admins can delete team members.");  //delete error
+                    setError("Only admins can delete team members.");
                 } else if (error.response && error.response.status === 401) {
                     setError("You must be logged in to delete.");
                 } else {
@@ -54,12 +57,11 @@ const EditMembers = (props) => {
                 }
             });
     };
-
     return (
         <div className="page">
             <div className="container">
                 <div >
-                    <button onClick={() => props.setCurrentPage(1)} className="backButton">←</button>
+                    <button onClick={() => setCurrentPage(1)} className="backButton">←</button>
                     <h2 className="title">Edit Team Member</h2>
                 </div>
                 <form onSubmit={handleSubmit} className="form">

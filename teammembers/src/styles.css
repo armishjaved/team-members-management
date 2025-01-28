@@ -1,14 +1,103 @@
 /* General Page Layout */
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 40%;
     padding: 15px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Align title and button */
+    align-items: center; /* Ensure vertical alignment */
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Allows it to take available space */
+  }
+  
+  .memberCount {
+    font-size: 16px;
+    color: #444;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  
+  .addButton {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .dropdown-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .proceed-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .proceed-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
   
   .headerContent {
     display: flex;
@@ -17,19 +106,6 @@
     width: 100%;
   }
   
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .memberCount {
-    font-size: 16px;
-    color: #444;
-    text-align: center;
-    margin-top: 5px; /*  spacing */
-    font-weight: normal;
-  }
   
 
 .backButton {
