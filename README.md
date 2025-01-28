@@ -24,7 +24,6 @@ A **Full-Stack** web application built with **Django REST Framework** for the ba
 
 ### **Frontend:**
 - **React.js** 
-- **React Router** (for navigation)
 - **Axios** (for API calls)
 - **Tailwind CSS** (for styling)
 
