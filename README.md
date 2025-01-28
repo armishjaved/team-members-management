@@ -9,8 +9,7 @@ A **Full-Stack** web application built with **Django REST Framework** for the ba
 ✅ View all team members with roles(if admin).  
 ✅ Add new team members with role selection.  
 ✅ Edit existing team member details.  
-✅ Delete team members (Only Admins can delete).  
-✅ Role-based access control (`Admin` vs `Regular`).  
+✅ Delete team members (Only Admins can delete).
 ✅ Responsive **Single Page Application (SPA)** using **React.js**.  
 
 ---
