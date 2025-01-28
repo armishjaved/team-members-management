@@ -59,7 +59,7 @@ To run the app:
 Server-side
 1. python manage.py runserver
 - The API should now be running at:
-➡️ http://127.0.0.1:8000/api/
+➡️ http://127.0.0.1:8000/api/team-members/
 
 Client-side
 
