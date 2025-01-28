@@ -41,9 +41,6 @@ team-members-management/
   │── db.sqlite3 # Database
   │── requirements.txt # Python dependencies
   │── README.md # Documentation
-  │── package.json # React dependencies
-  │── .gitignore
-
 ```
 
 ---
