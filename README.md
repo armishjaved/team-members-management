@@ -33,7 +33,16 @@ A **Full-Stack** web application built with **Django REST Framework** for the ba
 
 ## 🏗️ Project Structure
 ```bash
-team-members-management/ │── teamMemberManagementApp/ # Django Backend (API) │── teamMemberManagementApp_api/ # Django API Implementation │── teammembers/ # React Frontend (SPA) │── manage.py # Django Manager │── db.sqlite3 # Database │── requirements.txt # Python dependencies │── README.md # Documentation │── package.json # React dependencies │── .gitignore
+team-members-management/
+  │── teamMemberManagementApp/ # Django Backend (API)
+  │── teamMemberManagementApp_api/ # Django API Implementation
+  │── teammembers/ # React Frontend (SPA)
+  │── manage.py # Django Manager
+  │── db.sqlite3 # Database
+  │── requirements.txt # Python dependencies
+  │── README.md # Documentation
+  │── package.json # React dependencies
+  │── .gitignore
 
 ```
 
@@ -50,15 +59,15 @@ Environment variables
 Server-side
 
 
-python manage.py runserver
+- python manage.py runserver
 The API should now be running at:
 ➡️ http://127.0.0.1:8000/api/
 
 Client-side
 
-cd teammembers
-npm install
-npm run dev
-The frontend should now be running at:
+- cd teammembers
+- npm install
+- npm run dev
+- The frontend should now be running at:
 ➡️ http://localhost:3000/
 
