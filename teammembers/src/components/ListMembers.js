@@ -17,9 +17,16 @@ const ListMembers = ({ setCurrentPage, setuserModifyId }) => {
     <div className="page">
       {/* Sticky Header */}
       <div className="header">
-        <h2 className="title">Team Members</h2>
-        <button onClick={() => {setCurrentPage(2);}} className="addButton">+</button>
+        <div className="headerContent">
+          <h2 className="title">Team Members</h2>
+          {/* I assumed that an admin will always be in the list hence number of team members is total people -1 */}
+          <p className="memberCount">You have {teamMembers.length - 1} Team Member(s)</p>
+        </div>
+        <button onClick={() => { setCurrentPage(2); }} className="addButton">+</button>
       </div>
+
+
+
 
       {/* Scrollable List */}
       <div className="listContainer">
@@ -28,7 +35,7 @@ const ListMembers = ({ setCurrentPage, setuserModifyId }) => {
         ) : (
           teamMembers.map((member) => (
             <div key={member.id} className="memberCard">
-              <div className="memberInfo" onClick={() => {setCurrentPage(3); setuserModifyId(member.id);} }>
+              <div className="memberInfo" onClick={() => { setCurrentPage(3); setuserModifyId(member.id); }}>
                 <h4>{member.first_name} {member.last_name} {member.role === "admin" ? "(Admin)" : ""}</h4>
                 <p>{member.phone_number}</p>
                 <p>{member.email}</p>
