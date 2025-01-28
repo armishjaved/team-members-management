@@ -27,7 +27,7 @@
     font-size: 16px;
     color: #444;
     text-align: center;
-    margin-top: 5px; /* Add spacing */
+    margin-top: 5px; /*  spacing */
     font-weight: normal;
   }
   
@@ -73,16 +73,31 @@
   margin-top: 20px;
 }
 
-/* Individual Member Card */
+/*  hover effect and pointer cursor */
 .memberCard {
-  background-color: white;
-  width: 100%;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
 }
+
+/* Hover effect */
+.memberCard:hover {
+    background-color: #f0f4ff; /* Light blue hover effect */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Change cursor on member info */
+.memberInfo {
+    cursor: pointer;
+}
+
 
 /* Empty Message Styling */
 .emptyMessage {
