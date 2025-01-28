@@ -78,12 +78,13 @@
 
 /* Common Container */
 .container {
-  width: 400px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Subtitle */
 .subtitle {
@@ -98,50 +99,35 @@
   display: flex;
   flex-direction: column;
 }
-
 .formGroup {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  width: 100%; /* Ensures full width */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width: 100%; /* Ensure all fields take full width */
 }
 
-.input {
-  width: 100%; 
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  background-color: #fafafa;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-/* Input Fields */
-.select {
-  width: 100%; /* Ensure full width */
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  background-color: #fafafa;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  appearance: none; /* Remove default browser styling */
-}
-
-/* Match all input fields to the same width */
 .input,
 .select {
-  width: calc(100% - 24px);
+    width: 100% !important; /* Force full width */
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
-/* Focus Effect */
-.select:focus {
-  border-color: #a855f7;
-  box-shadow: 0px 0px 5px rgba(168, 85, 247, 0.8);
+/* Additional fix for select dropdown */
+.select {
+    height: 44px !important; /* Force same height as input fields */
+    line-height: normal;
+    padding-right: 12px; /* Adjust padding to match */
 }
 
 /* Buttons */
