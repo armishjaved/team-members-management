@@ -85,7 +85,7 @@ const AddMembers = (props) => {
             />
           </div>
 
-          {error && <p className="error">{error}</p>} {/* Show error if exists */}
+
 
           <div className="formGroup">
             <label>Role</label>
@@ -96,6 +96,7 @@ const AddMembers = (props) => {
           </div>
 
           <button type="submit" className="saveButton">Save</button>
+          {error && <p className="error">{error}</p>} {/* Show error if exists */}
         </form>
       </div>
     </div>
