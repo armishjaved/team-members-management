@@ -63,7 +63,7 @@ Client-side
 
 1. cd teammembers
 2. npm install
-3. npm run dev
+3. npm start
 - The frontend should now be running at:
 ➡️ http://localhost:3000/
 
